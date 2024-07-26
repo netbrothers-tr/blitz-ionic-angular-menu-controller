@@ -1,0 +1,7 @@
+{
+  "name": "Menu Controller",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
