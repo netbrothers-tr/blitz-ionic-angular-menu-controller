@@ -1,3 +1,12 @@
+<ion-menu menuId="first-menu" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>First Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the first menu content.</ion-content>
+</ion-menu>
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -17,5 +26,22 @@
   <div id="container">
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ul style="list-style-type: none;">
+      <li>
+        <button (click)="clickTestGetMenus()">TEST: getMenus()</button>
+      </li>
+      <li>
+        <button (click)="clickTestOpen()">TEST: open()</button>
+      </li>
+      <li>
+        <button (click)="clickTestOpenWithId()">TEST: open() with ID</button>
+      </li>
+      <li>
+        <button (click)="clickTestClose()">TEST: close()</button>
+      </li>
+      <li>
+        <button (click)="clickTestCloseWithId()">TEST: close() with ID</button>
+      </li>
+    </ul>
   </div>
 </ion-content>
